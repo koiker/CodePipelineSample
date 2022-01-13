@@ -2,7 +2,7 @@ version: 0.2
 phases:
   build:
     commands:
-      - aws cloudformation validate-template fileb://codepipeline.yaml
+      - aws cloudformation validate-template --template-body file://codepipeline.yaml
 artifacts:
   files:
     - '**/*'
